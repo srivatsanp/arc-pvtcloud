@@ -2,14 +2,10 @@ apiVersion: cluster.x-k8s.io/v1alpha2
 kind: MachineDeployment
 metadata:
   annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"cluster.x-k8s.io/v1alpha2","kind":"MachineDeployment","metadata":{"annotations":{"machinedeployment.clusters.k8s.io/revision":"1"},"creationTimestamp":"2019-12-20T21:19:43Z","generation":4,"labels":{"cluster.x-k8s.io/cluster-name":"clustergroup-wssdkubernetes","fluxcd.io/sync-gc-mark":"sha256.z2jW3HPyVsb_V8fvCxVCHYbckau11AUEx1s00dUn9PM","nodepool":"nodepool-0"},"name":"clustergroup-wssdkubernetes-md-0","namespace":"default","ownerReferences":[{"apiVersion":"cluster.x-k8s.io/v1alpha2","kind":"Cluster","name":"clustergroup-wssdkubernetes","uid":"70172be4-236e-11ea-a8d7-00155d6e9419"}],"resourceVersion":"4439456","selfLink":"/apis/cluster.x-k8s.io/v1alpha2/namespaces/default/machinedeployments/clustergroup-wssdkubernetes-md-0","uid":"70b74488-236e-11ea-a8d7-00155d6e9419"},"spec":{"minReadySeconds":0,"progressDeadlineSeconds":600,"replicas":2,"revisionHistoryLimit":1,"selector":{"matchLabels":{"cluster.x-k8s.io/cluster-name":"clustergroup-wssdkubernetes","nodepool":"nodepool-0"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":0},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"cluster.x-k8s.io/cluster-name":"clustergroup-wssdkubernetes","nodepool":"nodepool-0"}},"spec":{"bootstrap":{"configRef":{"apiVersion":"bootstrap.cluster.x-k8s.io/v1alpha2","kind":"KubeadmConfigTemplate","name":"clustergroup-wssdkubernetes-md-0","namespace":"default"}},"infrastructureRef":{"apiVersion":"infrastructure.cluster.x-k8s.io/v1alpha2","kind":"WssdMachineTemplate","name":"clustergroup-wssdkubernetes-md-0","namespace":"default"},"version":"1.14.2"}}},"status":{"availableReplicas":3,"observedGeneration":4,"readyReplicas":3,"replicas":3,"updatedReplicas":3}}
     machinedeployment.clusters.k8s.io/revision: "1"
-  creationTimestamp: "2019-12-20T21:19:43Z"
   generation: 5
   labels:
     cluster.x-k8s.io/cluster-name: clustergroup-wssdkubernetes
-    fluxcd.io/sync-gc-mark: sha256.z2jW3HPyVsb_V8fvCxVCHYbckau11AUEx1s00dUn9PM
     nodepool: nodepool-0
   name: clustergroup-wssdkubernetes-md-0
   namespace: default
@@ -18,13 +14,10 @@ metadata:
     kind: Cluster
     name: clustergroup-wssdkubernetes
     uid: 70172be4-236e-11ea-a8d7-00155d6e9419
-  resourceVersion: "4439604"
-  selfLink: /apis/cluster.x-k8s.io/v1alpha2/namespaces/default/machinedeployments/clustergroup-wssdkubernetes-md-0
-  uid: 70b74488-236e-11ea-a8d7-00155d6e9419
 spec:
   minReadySeconds: 0
   progressDeadlineSeconds: 600
-  replicas: 3
+  replicas: 5
   revisionHistoryLimit: 1
   selector:
     matchLabels:
