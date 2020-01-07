@@ -7,7 +7,6 @@ metadata:
   generation: 3
   labels:
     cluster.x-k8s.io/cluster-name: clustergroup-wssdkubernetes
-    fluxcd.io/sync-gc-mark: sha256.z2jW3HPyVsb_V8fvCxVCHYbckau11AUEx1s00dUn9PM
     nodepool: nodepool-0
   name: clustergroup-wssdkubernetes-md-0
   namespace: default
@@ -16,14 +15,14 @@ metadata:
       kind: Cluster
       name: clustergroup-wssdkubernetes
       uid: 70172be4-236e-11ea-a8d7-00155d6e9419
-  resourceVersion: '4214268'
+  resourceVersion: '4284515'
   selfLink: >-
     /apis/cluster.x-k8s.io/v1alpha2/namespaces/default/machinedeployments/clustergroup-wssdkubernetes-md-0
   uid: 70b74488-236e-11ea-a8d7-00155d6e9419
 spec:
   minReadySeconds: 0
   progressDeadlineSeconds: 600
-  replicas: 3
+  replicas: 2
   revisionHistoryLimit: 1
   selector:
     matchLabels:
